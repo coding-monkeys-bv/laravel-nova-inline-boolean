@@ -11,9 +11,9 @@
                     :disabled="isReadonly"
                 />
             </div>
-            <div v-if="field.textOnIndex" class="py-2">
+            <label :for="field.attribute" v-if="field.textOnIndex" class="py-2">
                 {{ displayValue }}
-            </div>
+            </label>
         </div>
     </div>
     <!-- When not editable on index -->
