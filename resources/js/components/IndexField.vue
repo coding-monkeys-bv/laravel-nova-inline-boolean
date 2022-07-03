@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import { Errors, FormField, HandlesValidationErrors } from 'laravel-nova'
 import InlineInit from './mixins/init';
 import InlineMixin from './mixins/inline';
 
@@ -38,8 +37,6 @@ export default {
     props: ['resourceName', 'field'],
 
     mixins: [
-        FormField, 
-        HandlesValidationErrors, 
         InlineInit, 
         InlineMixin,
     ],
@@ -67,9 +64,11 @@ export default {
         checked() {
             return Boolean(this.value)
         },
+
         trueValue() {
             return +this.checked
         },
+        
         resourceId() {
             return this.$parent.resource.id.value;
         }

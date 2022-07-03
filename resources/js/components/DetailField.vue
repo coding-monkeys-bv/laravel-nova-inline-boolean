@@ -25,13 +25,15 @@
 </template>
 
 <script>
-import { Errors, FormField, HandlesValidationErrors } from 'laravel-nova'
 import InlineInit from './mixins/init';
 import InlineMixin from './mixins/inline';
 
 export default {
 
-    mixins: [FormField, HandlesValidationErrors, InlineInit, InlineMixin],
+    mixins: [
+        InlineInit, 
+        InlineMixin,
+    ],
 
     props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
 
