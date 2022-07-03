@@ -1,6 +1,6 @@
 <?php
 
-namespace CodingMonkeysBv\InlineBoolean;
+namespace CodingMonkeys\InlineBoolean;
 
 use Laravel\Nova\Fields\Field;
 

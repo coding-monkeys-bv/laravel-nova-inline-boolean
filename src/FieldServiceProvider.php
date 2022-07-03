@@ -1,6 +1,6 @@
 <?php
 
-namespace CodingMonkeysBv\InlineBoolean;
+namespace CodingMonkeys\InlineBoolean;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

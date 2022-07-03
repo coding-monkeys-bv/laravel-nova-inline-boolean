@@ -1,5 +1,5 @@
 {
-    "name": "coding-monkeys-bv/laravel-nova-inline-boolean",
+    "name": "codingmonkeys/laravel-nova-inline-boolean",
     "description": "A field which allows booleans to be updated inline.",
     "keywords": [
         "laravel",
@@ -12,13 +12,13 @@
     },
     "autoload": {
         "psr-4": {
-            "CodingMonkeysBv\\InlineBoolean\\": "src/"
+            "CodingMonkeys\\InlineBoolean\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CodingMonkeysBv\\InlineBoolean\\FieldServiceProvider"
+                "CodingMonkeys\\InlineBoolean\\FieldServiceProvider"
             ]
         }
     },
