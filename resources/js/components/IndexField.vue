@@ -1,17 +1,17 @@
 <template>
     <!-- When editable on index -->
-    <div v-if="field.inlineIndex" slot="field">
+    <div v-if="field.inlineIndex" slot="field" @click.stop>
         <div class="flex items-center">
             <div class="py-2 mr-3">
                 <checkbox
                     @input="toggle"
-                    :id="field.attribute"
+                    :id="field.attribute + '-' + resourceId"
                     :name="field.name"
                     :checked="checked"
                     :disabled="isReadonly"
                 />
             </div>
-            <label :for="field.attribute" v-if="field.textOnIndex" class="py-2">
+            <label :for="field.attribute + '-' + resourceId" v-if="field.textOnIndex" class="py-2">
                 {{ displayValue }}
             </label>
         </div>
